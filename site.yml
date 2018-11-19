@@ -10,6 +10,7 @@
         - lrzsz
       state: latest
     when: ansible_os_family == "RedHat"
+
   - name: ubuntu env install
     apt:
       name: 
