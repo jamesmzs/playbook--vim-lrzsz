@@ -1,0 +1,4 @@
+该项目可直接定义 task来达到目的，facks获取到系统是红帽系列就会使用yum安装，如果是Ubuntu使用apt安装。
+
+
+使用方式：定义主机组os列表后，使用命令 ansible-playbook site.yml
