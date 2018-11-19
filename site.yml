@@ -1,0 +1,17 @@
+---
+- hosts: os
+  remote_user: root
+  tasks:
+  - name: Redhat env install
+    yum:
+      name: 
+        - vim
+        - lrzsz
+      state: latest
+    when: ansible_os_family == "RedHat"
+  - name: ubuntu env install
+    apt:
+      name: 
+        - vim
+        - lrzsz
+    when: ansible_os_family == "Debian"
