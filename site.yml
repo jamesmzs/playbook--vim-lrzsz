@@ -1,5 +1,6 @@
 ---
 - hosts: os
+  gather_facts: true
   remote_user: root
   tasks:
   - name: Redhat env install
